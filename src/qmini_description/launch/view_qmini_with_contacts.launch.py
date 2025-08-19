@@ -13,6 +13,7 @@ def generate_launch_description():
     urdf_file_name = 'Qmini_with_auxiliary_contacts.urdf'
     urdf = os.path.join(
         get_package_share_directory('qmini_description'),
+        'urdf',
         urdf_file_name)
     with open(urdf, 'r') as infp:
         robot_desc = infp.read()
