@@ -1,15 +1,17 @@
 Panels:
   - Class: rviz_common/Displays
-    Help Height: 78
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /Global Options1
         - /Status1
         - /RobotModel1
+        - /RobotModel1/Mass Properties1
+        - /RobotModel1/Description Topic1
         - /TF1
       Splitter Ratio: 0.5
-    Tree Height: 1112
+    Tree Height: 1190
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -51,7 +53,7 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
-      Collision Enabled: false
+      Collision Enabled: true
       Description File: ""
       Description Source: Topic
       Description Topic:
@@ -248,19 +250,6 @@ Visualization Manager:
                       {}
       Update Interval: 0
       Value: true
-    - Class: rviz_default_plugins/Marker
-      Enabled: true
-      Marker Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /contact_points
-      Name: ContactPoints
-      Namespaces:
-        contact_points: true
-      Queue Size: 100
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -307,25 +296,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 1.9925035238265991
+      Distance: 2.3016610145568848
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.1920456737279892
-        Y: 0.2129051685333252
-        Z: -0.2863435447216034
+        X: 0
+        Y: 0
+        Z: 0
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5553978085517883
+      Pitch: 0.1353979855775833
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 5.368587017059326
+      Yaw: 5.816769123077393
     Saved: ~
 Window Geometry:
   Displays:
@@ -333,7 +322,7 @@ Window Geometry:
   Height: 1335
   Hide Left Dock: false
   Hide Right Dock: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000003d7000004e1fc0200000005fb000000100044006900730070006c006100790073010000003b000004e1000000c700fffffffb0000001200530065006c0065006300740069006f006e00000002ea0000005c0000005c00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000325000000640000005c00fffffffb0000000a00560069006500770073000000036a0000013f000000a000fffffffb0000000800540069006d00650000000488000000940000003700ffffff00000617000004e100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000001b4000004e1fc0200000005fb000000100044006900730070006c006100790073010000003b000004e1000000c700fffffffb0000001200530065006c0065006300740069006f006e00000001f8000000d70000005c00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000258000001040000005c00fffffffb0000000a0056006900650077007300000002eb000001b5000000a000fffffffb0000000800540069006d00650000000465000000b70000003700ffffff0000083a000004e100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -343,5 +332,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 2548
-  X: -32
-  Y: -32
+  X: 0
+  Y: 0
