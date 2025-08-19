@@ -4,37 +4,29 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
 
-    urdf_file_name = LaunchConfiguration('urdf', default='q1.urdf')
-    '''
+    # Get the path to the URDF file
     urdf_path = os.path.join(
         get_package_share_directory('q1_description'),
-        'urdf')
-    '''
-    urdf_path = get_package_share_directory('q1_description')
+        'urdf',
+        'q1.urdf')
 
-
-    # Read URDF at launch time via a Command substitution equivalent
-    # Here we resolve the default and read the file immediately for simplicity
-    if os.path.exists(urdf_to_read):
-        with open(urdf_to_read, 'r') as infp:
-            robot_desc = infp.read()
-    else:
-        robot_desc = '<robot name="q1"></robot>'
+    # Read URDF file
+    with open(urdf_path, 'r') as infp:
+        robot_desc = infp.read()
 
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_sim_time',
             default_value='false',
             description='Use simulation (Gazebo) clock if true'),
-        DeclareLaunchArgument(
-            'urdf',
-            default_value='q1.urdf',
-            description='URDF file name located in q1_description/urdf'),
+
 
         Node(
             package='robot_state_publisher',
