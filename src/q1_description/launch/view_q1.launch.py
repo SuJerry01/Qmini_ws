@@ -20,7 +20,6 @@ def generate_launch_description():
 
     # Read URDF at launch time via a Command substitution equivalent
     # Here we resolve the default and read the file immediately for simplicity
-    urdf_to_read = os.path.join(urdf_path, 'q1.urdf')
     if os.path.exists(urdf_to_read):
         with open(urdf_to_read, 'r') as infp:
             robot_desc = infp.read()
