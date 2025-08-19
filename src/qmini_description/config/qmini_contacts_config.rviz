@@ -1,0 +1,347 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /RobotModel1
+        - /TF1
+      Splitter Ratio: 0.5
+    Tree Height: 1112
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        LL_ankle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LL_hip_pitch:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LL_hip_roll:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LL_hip_yaw:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LL_knee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Link Tree Style: Links in Alphabetic Order
+        RL_ankle:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RL_hip_pitch:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RL_hip_roll:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RL_hip_yaw:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        RL_knee:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_LL_ankle_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_LL_ankle_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_LL_ankle_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_LL_ankle_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_RL_ankle_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_RL_ankle_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_RL_ankle_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        auxiliary_RL_ankle_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        LL_ankle:
+          Value: true
+        LL_hip_pitch:
+          Value: true
+        LL_hip_roll:
+          Value: true
+        LL_hip_yaw:
+          Value: true
+        LL_knee:
+          Value: true
+        RL_ankle:
+          Value: true
+        RL_hip_pitch:
+          Value: true
+        RL_hip_roll:
+          Value: true
+        RL_hip_yaw:
+          Value: true
+        RL_knee:
+          Value: true
+        auxiliary_LL_ankle_link1:
+          Value: true
+        auxiliary_LL_ankle_link2:
+          Value: true
+        auxiliary_LL_ankle_link3:
+          Value: true
+        auxiliary_LL_ankle_link4:
+          Value: true
+        auxiliary_RL_ankle_link1:
+          Value: true
+        auxiliary_RL_ankle_link2:
+          Value: true
+        auxiliary_RL_ankle_link3:
+          Value: true
+        auxiliary_RL_ankle_link4:
+          Value: true
+        base_link:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: false
+      Show Names: false
+      Tree:
+        base_link:
+          LL_hip_yaw:
+            LL_hip_roll:
+              LL_hip_pitch:
+                LL_knee:
+                  LL_ankle:
+                    auxiliary_LL_ankle_link1:
+                      {}
+                    auxiliary_LL_ankle_link2:
+                      {}
+                    auxiliary_LL_ankle_link3:
+                      {}
+                    auxiliary_LL_ankle_link4:
+                      {}
+          RL_hip_yaw:
+            RL_hip_roll:
+              RL_hip_pitch:
+                RL_knee:
+                  RL_ankle:
+                    auxiliary_RL_ankle_link1:
+                      {}
+                    auxiliary_RL_ankle_link2:
+                      {}
+                    auxiliary_RL_ankle_link3:
+                      {}
+                    auxiliary_RL_ankle_link4:
+                      {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Marker Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /contact_points
+      Name: ContactPoints
+      Namespaces:
+        contact_points: true
+      Queue Size: 100
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_default_plugins/SetInitialPose
+      Covariance x: 0.25
+      Covariance y: 0.25
+      Covariance yaw: 0.06853891909122467
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.9925035238265991
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.1920456737279892
+        Y: 0.2129051685333252
+        Z: -0.2863435447216034
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.5553978085517883
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 5.368587017059326
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1335
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000003d7000004e1fc0200000005fb000000100044006900730070006c006100790073010000003b000004e1000000c700fffffffb0000001200530065006c0065006300740069006f006e00000002ea0000005c0000005c00fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730000000325000000640000005c00fffffffb0000000a00560069006500770073000000036a0000013f000000a000fffffffb0000000800540069006d00650000000488000000940000003700ffffff00000617000004e100000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 2548
+  X: -32
+  Y: -32

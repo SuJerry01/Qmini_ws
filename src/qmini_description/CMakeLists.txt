@@ -17,11 +17,9 @@ install(
     DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-    FILES Qmini.urdf
-    Qmini_with_auxiliary_contacts.urdf
-    qmini_gym.urdf
-    DESTINATION share/${PROJECT_NAME}
+install(DIRECTORY
+    urdf/
+    DESTINATION share/${PROJECT_NAME}/urdf
 )
 
 install(
